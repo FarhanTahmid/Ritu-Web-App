@@ -4,10 +4,6 @@ def homepage(request):
     """The home page for ritu"""
     return render(request, 'ritu_web_app/homepage.html')
 
-def loginPage(request):
-    return render(request,'ritu_web_app/loginPage.html')
-def signupPage(request):
-    return render(request,'ritu_web_app/signUpForm.html')
 def aboutUs(request):
     return render(request,'ritu_web_app/aboutUs.html')
 def contactUs(request):
@@ -18,8 +14,6 @@ def leaderboard(request):
     return render(request, 'ritu_web_app/Leaderboard.html')
 def marketplace(request):
     return render(request, 'ritu_web_app/Marketplace.html')
-def menu(request):
-    return render(request, 'ritu_web_app/menu.html')
 def task1(request):
     return render(request, 'ritu_web_app/task1.html')
 def task2(request):
@@ -30,3 +24,5 @@ def verification(request):
     return render(request,'ritu_web_app/verificationPage.html')
 def profileCard(request):
     return render(request,'ritu_web_app/profileCard.html')
+def FinalMessege(request):
+    return render(request,'ritu_web_app/FinalMessege.html')
