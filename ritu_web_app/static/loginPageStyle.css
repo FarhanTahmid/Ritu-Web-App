@@ -107,3 +107,7 @@ form .button input:hover{
 form .signup-link a:hover{
   text-decoration: underline;
 }
+.raise-error .message{
+  color: red;
+  align-items: center;
+}
