@@ -6,6 +6,7 @@ from email import message
 from email.policy import default
 from ftplib import MAXLINE
 from hashlib import blake2b
+from itertools import product
 from shutil import _ntuple_diskusage
 from types import TracebackType
 from django.db import models
@@ -17,7 +18,7 @@ class Players(models.Model):
     mobileNumber=models.CharField(null=False,blank=False,max_length=15)
     email=models.EmailField(null=False,blank=False,max_length=100)
     address=models.CharField(null=False,blank=False,max_length=100)
-    picture=models.ImageField(default='default.png',null=True,blank=True,upload_to='images/')
+    picture=models.ImageField(default='default.png',null=True,blank=True,upload_to='images/')                               
 
     def __str__(self) :
         return self.username
